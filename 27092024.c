@@ -1,8 +1,6 @@
   #include <stdio.h>		// give access to the stdio.h library //
 
 
-  int main(){
-
     //defining variables//
 
     #define admin_password "coffeemakersimulator"   //adminstrator password defined//
@@ -23,7 +21,11 @@
     #define cappuccino_milk_millilitres 70
     #define mocha_milk_millilitres 160
 
+    //global functions//
+    
+    float initial_amount=0.0;
 
 
+int main(){
 
   }
