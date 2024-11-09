@@ -1,0 +1,20 @@
+SET initial_balance constant
+INITIALISE balance variable with initial_balance
+DEFINE array of transactions with positive numbers as deposits and negative numbers as withdrawals
+INITIALISE empty array to store unprocessed transactions
+SET counter to track number of unprocessed transactions and calculate number of transactions
+
+FOR each transaction in the set array:
+	-IF the transaction is a withdrawal, a negative balance or if the balance is zero:
+		1. store the transaction in the unprocessed array
+		2. IF the balance is zero print a message to the user stating that no balance is left and break loop
+		3. ELSE print a message showing that there are insufficient funds for the withdrawal.
+	-ELSE add the transaction amount to the balance
+
+PRINT final balance
+IF there are unprocessed transactions 
+	- PRINT a list of all unprocessed transactions
+ELSE 
+PRINT message that there are no unprocessed transactions
+
+END program
