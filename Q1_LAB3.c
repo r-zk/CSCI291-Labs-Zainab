@@ -87,7 +87,7 @@ int main() {
 
     //test insert_element
     insert_element(myArray, length, 2, 80); //inserts 25 at index 2
-    printf("After insertion of 25 at index 2: ");
+    printf("After insertion of 80 at index 2: ");
     for (int i = 0; i < length; i++) printf("%d ", myArray[i]);
     printf("\n"); //prints array after insertion
 
