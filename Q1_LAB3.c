@@ -27,11 +27,6 @@ void insert_element(int arr[],  int length,  int pos,  int value) {
         return; //exits if index is invalid
     }
 
-    if (length >= 6) { //ensures there is space in the array
-        printf("Error: Array is full.\n");
-        return;
-    }
-
     for (int i = length; i > pos; i--) { //shifts elements from the end
         arr[i] = arr[i - 1]; //shifts each element one position
     }
@@ -91,7 +86,7 @@ int main() {
     printf("\n"); //prints array after removal
 
     //test insert_element
-    insert_element(myArray, length, 2, 25); //inserts 25 at index 2
+    insert_element(myArray, length, 2, 80); //inserts 25 at index 2
     printf("After insertion of 25 at index 2: ");
     for (int i = 0; i < length; i++) printf("%d ", myArray[i]);
     printf("\n"); //prints array after insertion
